@@ -1,0 +1,8 @@
+POST http://glorious-cod-7jp7qwwpw4r24wp-6400.app.github.dev/api/v1/todos/ical
+Accept: application/json
+
+{
+"task_id": "2e80aefd-4a69-4a94-b23a-45f2b8110988",
+"task_url": "http://localhost:6400/api/v1/todos/ical/2e80aefd-4a69-4a94-b23a-45
+f2b8110988/status"
+}
