@@ -385,6 +385,22 @@ setproctitle = ["setproctitle"]
 tornado = ["tornado (>=0.2)"]
 
 [[package]]
+name = "icalendar"
+version = "5.0.12"
+description = "iCalendar parser/generator"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "icalendar-5.0.12-py3-none-any.whl", hash = "sha256:d873bb859df9c6d0e597b16d247436e0f83f7ac1b90a06429b8393fe8afeba40"},
+    {file = "icalendar-5.0.12.tar.gz", hash = "sha256:73f9be68477722c98320621400943705dcfdbbc6c2b565253f72d3f87e514db8"},
+]
+
+[package.dependencies]
+"backports.zoneinfo" = {version = "*", markers = "python_version == \"3.7\" or python_version == \"3.8\""}
+python-dateutil = "*"
+pytz = "*"
+
+[[package]]
 name = "importlib-metadata"
 version = "7.1.0"
 description = "Read metadata from Python packages"
@@ -655,6 +671,17 @@ files = [
 six = ">=1.5"
 
 [[package]]
+name = "pytz"
+version = "2024.1"
+description = "World timezone definitions, modern and historical"
+optional = false
+python-versions = "*"
+files = [
+    {file = "pytz-2024.1-py2.py3-none-any.whl", hash = "sha256:328171f4e3623139da4983451950b28e95ac706e13f3f2630a879749e7a8b319"},
+    {file = "pytz-2024.1.tar.gz", hash = "sha256:2a29735ea9c18baf14b448846bde5a48030ed267578472d8955cd0e7443a9812"},
+]
+
+[[package]]
 name = "redis"
 version = "5.0.3"
 description = "Python client for Redis database and key-value store"
@@ -899,4 +926,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.8"
-content-hash = "e5000b0534900cfe918e9b7aa11644654d1745341626b89e410122e37127b4e4"
+content-hash = "089f5c30b8a1eb0a674553635a247b11eeebf73820ddbf6e4330884c97461eb8"
